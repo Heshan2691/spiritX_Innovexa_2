@@ -26,12 +26,15 @@ export default function Navbar() {
       </div>
 
       {categories.map((category, index) => (
-        <span key={index} className="cursor-pointer hover:underline">
+        <a key={index} href={`/${category.toLowerCase()}`} className="cursor-pointer hover:underline">
           {category}
-        </span>
+        </a>
       ))}
 
-      <button className="ml-auto text-gray-400 hover:text-white">
+      <button 
+        className="ml-auto text-gray-400 hover:text-white"
+        onClick={() => window.location.href = '/login'}
+      >
         <User size={30} />
       </button>
     </nav>

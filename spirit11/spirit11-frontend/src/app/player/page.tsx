@@ -20,28 +20,10 @@ export default function ProfilePage() {
     <div className="flex flex-col min-h-screen">
       <div className="flex-1">
         <NavBar/>
-        <div className="min-h-screen bg-gray-50 p-6 flex-1">
-        <nav className="bg-gray-900 text-white flex items-center px-10 py-9 space-x-8 w-full fixed top-0 left-0 z-50" style={{ height: '60px' }}>
-      <div className="text-xl font-bold flex items-center space-x-1">
-        <span>SPIRIT11</span>
-        
-        
-      </div>
-      {categories.map((category, index) => (
-        <span key={index} className="cursor-pointer hover:underline">
-          {category}
-        </span>
-      ))}
-     
-
-      <button className="ml-auto text-gray-400 hover:text-white">
-        <User size={30} />
-      </button>
-    </nav>
+        <div>
           {/* Header */}
           <div className="flex justify-between items-center mb-6">
             <h1 className="text-2xl font-semibold text-gray-600">Player’s Profile</h1>
-            
           </div>
 
           {/* Profile Card */}
