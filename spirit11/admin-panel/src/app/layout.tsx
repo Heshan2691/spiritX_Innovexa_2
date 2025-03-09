@@ -1,7 +1,6 @@
-// No need to use styled-jsx, use TailwindCSS for styles
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css"; // Assuming TailwindCSS is imported here
-import Sidebar from "@/app/components/sidebar";
+import "./globals.css"; // Ensure Tailwind or global styles are included
+import SidebarWrapper from "@/app/components/SidebarWrapper"; // Use the new wrapper
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,14 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="flex">
-          <Sidebar />
-          <main className="flex-grow p-5">
-            {children}
-          </main>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="flex h-screen">
+          <SidebarWrapper /> {/* ✅ Sidebar only appears on admin pages */}
+          <main className="flex-grow p-5">{children}</main>
         </div>
       </body>
     </html>
