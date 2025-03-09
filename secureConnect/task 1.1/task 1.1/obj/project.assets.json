@@ -447,39 +447,23 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\LENOVO\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\Hello\\.nuget\\packages\\": {},
->>>>>>> ea624d9d64be0eaa54e4231e7c0caf114727552d
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "E:\\project_syncfusion_dashboard-main\\spiritX\\secureConnect\\task 1.1\\task 1.1\\task 1.1.csproj",
       "projectName": "task 1.1",
       "projectPath": "E:\\project_syncfusion_dashboard-main\\spiritX\\secureConnect\\task 1.1\\task 1.1\\task 1.1.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
       "outputPath": "E:\\project_syncfusion_dashboard-main\\spiritX\\secureConnect\\task 1.1\\task 1.1\\obj\\",
-=======
-      "projectUniqueName": "D:\\Github\\spiritX\\secureConnect\\task 1.1\\task 1.1\\task 1.1.csproj",
-      "projectName": "task 1.1",
-      "projectPath": "D:\\Github\\spiritX\\secureConnect\\task 1.1\\task 1.1\\task 1.1.csproj",
-      "packagesPath": "C:\\Users\\Hello\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\spiritX\\secureConnect\\task 1.1\\task 1.1\\obj\\",
->>>>>>> ea624d9d64be0eaa54e4231e7c0caf114727552d
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\Hello\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> ea624d9d64be0eaa54e4231e7c0caf114727552d
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -536,12 +520,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
->>>>>>> ea624d9d64be0eaa54e4231e7c0caf114727552d
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file E:\\project_syncfusion_dashboard-main\\spiritX\\secureConnect\\task 1.1\\task 1.1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

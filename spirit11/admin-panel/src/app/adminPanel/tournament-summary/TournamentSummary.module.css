@@ -1,0 +1,146 @@
+/* TournamentSummary.module.css */
+
+.container {
+    display: flex;
+    background-color: #f8fafc; /* bg-slate-50 */
+    min-height: 100vh;
+  }
+  
+  
+  
+  .main {
+    margin-left: 16rem; /* ml-64 */
+    padding: 1.5rem; /* p-6 */
+    width: 100%;
+  }
+  
+  .pageTitle {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    color: #1e293b; /* text-slate-800 */
+    margin-bottom: 1.5rem; /* mb-6 */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* grid-cols-1 */
+    gap: 1.5rem; /* gap-6 */
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)); /* md:grid-cols-2 */
+    }
+  }
+  
+  .card {
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    padding: 1.5rem; /* p-6 */
+    color: white; /* text-white */
+  }
+  
+  .cardIndigo {
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    padding: 1.5rem; /* p-6 */
+    color: white; /* text-white */
+  }
+
+  .cardRose {
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    padding: 1.5rem; /* p-6 */
+    color: white; /* text-white */
+  }
+
+  .cardEmerald {
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    padding: 1.5rem; /* p-6 */
+    color: white; /* text-white */
+  }
+
+  .cardPurple {
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    padding: 1.5rem; /* p-6 */
+    color: white; /* text-white */
+  }
+
+  .cardWhite {
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    padding: 1.5rem; /* p-6 */
+    color: inherit;
+    background-color: white; /* bg-white */
+  }
+  
+  .cardPurple {
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    padding: 1.5rem; /* p-6 */
+    color: white; /* text-white */
+  .cardWhite {
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    padding: 1.5rem; /* p-6 */
+    color: inherit;
+    background-color: white; /* bg-white */
+  }
+    background-color: white; /* bg-white */
+    color: inherit;
+  }
+  
+  .cardLabel {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* tracking-wider */
+  }
+  
+  .cardValue {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    margin-top: 0.5rem; /* mt-2 */
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    color: #1e293b; /* text-slate-800 */
+    margin-top: 2rem; /* mt-8 */
+    margin-bottom: 1rem; /* mb-4 */
+  }
+  
+  .profileCircle {
+    background-color: rgba(255, 255, 255, 0.2); /* bg-white bg-opacity-20 */
+    border-radius: 9999px; /* rounded-full */
+    width: 3rem; /* w-12 */
+    height: 3rem; /* h-12 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem; /* mr-4 */
+  }
+  
+  .profileInitial {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+  }
+  
+  .profileInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem; /* mt-2 */
+  }
+  
+  .profileName {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+  }
+  
+  .profileStat {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+  }
