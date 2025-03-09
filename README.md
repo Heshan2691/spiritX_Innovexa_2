@@ -1,105 +1,105 @@
-# SecureConnect
+# Spirit11
 
-SecureConnect is a **Next.js** application with **MongoDB** as the database and **NextAuth.js** for authentication. It provides user registration, login, and protected routes.
+## 🏏 Overview
+The **Spirit11 Admin Panel** is a web-based platform that allows administrators to manage players, track statistics, and configure the game logic for the fantasy cricket system. This panel provides an intuitive user interface for efficient team and tournament management.
 
 ## 🚀 Tech Stack
-- **Frontend:** Next.js, React, TypeScript
-- **Backend:** Next.js API Routes, NextAuth.js
-- **Database:** MongoDB with Mongoose ORM
-- **Authentication:** NextAuth.js (Credentials Provider)
-- **Security:** Bcrypt.js for password hashing
+- **Frontend**: Next.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MySQL
+- **Authentication**: JWT (JSON Web Token)
+- **API Client**: Axios
+- **Styling**: Tailwind CSS
 
----
-
-## 📌 Features
-- User Registration (Signup API)
-- User Login (NextAuth.js with JWT-based authentication)
-- Protected Dashboard (Only accessible after login)
-- Logout Functionality
-
----
-
-## 🔧 Installation
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/your-username/secureconnect.git
-cd secureconnect
+## 📂 Folder Structure
+```
+spirit11-admin/
+│-- frontend/              # Next.js-based Admin Panel UI
+│   ├── components/        # Reusable UI components
+│   ├── pages/             # Next.js pages (Dashboard, Players, Tournaments, etc.)
+│   ├── services/          # API service handlers
+│   ├── styles/            # Global styles
+│   ├── public/            # Static assets
+│   ├── next.config.js     # Next.js configuration file
+│   ├── tailwind.config.js # TailwindCSS configuration
+│   ├── package.json       # Dependencies and scripts
+│   └── tsconfig.json      # TypeScript configuration
+│
+│-- backend/               # Node.js API Server
+│   ├── controllers/       # Business logic handlers
+│   ├── routes/            # Express route definitions
+│   ├── models/            # Database models
+│   ├── middlewares/       # Authentication and validation
+│   ├── config/            # Environment configurations
+│   ├── db/                # MySQL database connection
+│   ├── package.json       # Backend dependencies and scripts
+│   ├── server.js          # Main server file
+│   └── .env               # Environment variables (API keys, DB credentials, etc.)
 ```
 
-### 2️⃣ Install Dependencies
-```bash
+## 🎯 Features
+- **Admin Dashboard**: Overview of system stats.
+- **Player Management**: Add, update, and remove players.
+- **Team & Tournament Management**: Manage teams and tournament schedules.
+- **User Authentication**: Secure login with JWT.
+- **Responsive UI**: Optimized for desktop and mobile.
+
+## 🛠️ Setup & Installation
+### Prerequisites
+- Node.js (v18+)
+- MySQL Database
+- npm or yarn
+
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/yourusername/spirit11-admin.git
+cd spirit11-admin
+```
+
+### 2️⃣ Setup the Backend
+```sh
+cd backend
 npm install
 ```
 
-### 3️⃣ Set Up Environment Variables
-Create a `.env.local` file in the root directory and add:
-```env
-MONGODB_URI=mongodb+srv://your_username:your_password@cluster.mongodb.net/secureconnect
-NEXTAUTH_SECRET=your_secret_key
-NEXTAUTH_URL=http://localhost:3000
+Create a **.env** file in the `backend/` directory:
+```
+PORT=5000
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=yourpassword
+DB_NAME=spirit11_db
+JWT_SECRET=your_secret_key
+```
+Run the backend:
+```sh
+npm start
 ```
 
-### 4️⃣ Start the Development Server
-```bash
+### 3️⃣ Setup the Frontend
+```sh
+cd ../frontend
+npm install
+```
+Create a **.env.local** file in `frontend/`:
+```
+NEXT_PUBLIC_API_BASE_URL=http://localhost:5000/api
+```
+Run the frontend:
+```sh
 npm run dev
 ```
 
-The application will run at **http://localhost:3000**.
+## 📌 API Endpoints (Backend)
+| Method | Endpoint         | Description |
+|--------|-----------------|-------------|
+| GET    | /api/players    | Get all players |
+| POST   | /api/players    | Add a new player |
+| PUT    | /api/players/:id | Update player details |
+| DELETE | /api/players/:id | Delete a player |
 
----
 
-## 📂 Project Structure
-```
-secureconnect/
-│── lib/
-│   ├── mongodb.ts   # MongoDB Connection
-│── models/
-│   ├── User.ts      # Mongoose User Model
-│── pages/
-│   ├── api/
-│   │   ├── auth/
-│   │   │   ├── signup.ts  # Signup API
-│   │   │   ├── [...nextauth].ts  # NextAuth Config
-│   ├── dashboard.tsx  # Protected Dashboard
-│   ├── login.tsx      # Login Page
-│   ├── signup.tsx     # Signup Page
-```
 
----
-
-## 🔐 Authentication with NextAuth.js
-- Uses **NextAuth.js** Credentials Provider.
-- Passwords are hashed using **bcrypt.js**.
-- JWT-based session handling.
-
-### Signup API
-**Endpoint:** `POST /api/auth/signup`
-```json
-{
-  "username": "testuser",
-  "password": "mypassword"
-}
-```
-
-### Login API (Using NextAuth.js)
-**Endpoint:** `POST /api/auth/callback/credentials`
-```json
-{
-  "username": "testuser",
-  "password": "mypassword"
-}
-```
-
----
-
-## 🛠️ Future Improvements
-- OAuth-based authentication (Google, GitHub, etc.)
-- Email verification
-- Role-based authentication
-- Dark mode UI
-
----
 
 
 <<<<<<< HEAD
